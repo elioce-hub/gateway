@@ -47,7 +47,7 @@ spring:
           uri: http://reservation:8080
           predicates:
             - Path=/reservations/**,/reservationinquiries/**
-        - id: Reservationmanagement
+        - id: management
           uri: http://Reservationmanagement:8080
           predicates:
             - Path=/hotelReservationManagements/**
