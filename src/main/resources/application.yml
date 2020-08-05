@@ -15,11 +15,15 @@ spring:
         - id: Reservationmanagement
           uri: http://localhost:8082
           predicates:
-            - Path=/hotelReservationManagements/** 
+            - Path=/hotelReservationManagements/**
         - id: payment
           uri: http://localhost:8083
           predicates:
-            - Path=/payments/** 
+            - Path=/payments/**
+        - id: CustomerManagement
+          uri: http://localhost:8084
+          predicates:
+            - Path=/customerManagements/**,/customerReservationInfoes/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -46,11 +50,15 @@ spring:
         - id: Reservationmanagement
           uri: http://Reservationmanagement:8080
           predicates:
-            - Path=/hotelReservationManagements/** 
+            - Path=/hotelReservationManagements/**
         - id: payment
           uri: http://payment:8080
           predicates:
-            - Path=/payments/** 
+            - Path=/payments/**
+        - id: CustomerManagement
+          uri: http://CustomerManagement:8080
+          predicates:
+            - Path=/customerManagements/**,/customerReservationInfoes/**
       globalcors:
         corsConfigurations:
           '[/**]':
