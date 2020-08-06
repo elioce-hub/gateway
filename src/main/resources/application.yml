@@ -56,7 +56,7 @@ spring:
           predicates:
             - Path=/payments/**
         - id: CustomerManagement
-          uri: http://customermanagement:8080
+          uri: http://skccuser24-customermanagement:8080
           predicates:
             - Path=/customerManagements/**,/customerReservationInfoes/**
       globalcors:
