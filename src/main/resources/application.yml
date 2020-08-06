@@ -47,8 +47,8 @@ spring:
           uri: http://reservation:8080
           predicates:
             - Path=/reservations/**,/reservationinquiries/**
-        - id: management
-          uri: http://Reservationmanagement:8080
+        - id: Reservationmanagement
+          uri: http://reservationmanagement:8080
           predicates:
             - Path=/hotelReservationManagements/**
         - id: payment
@@ -56,7 +56,7 @@ spring:
           predicates:
             - Path=/payments/**
         - id: CustomerManagement
-          uri: http://CustomerManagement:8080
+          uri: http://customermanagement:8080
           predicates:
             - Path=/customerManagements/**,/customerReservationInfoes/**
       globalcors:
